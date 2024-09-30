@@ -1,70 +1,47 @@
-# Getting Started with Create React App
+# Bookstore-App-Java-PostgreSQL-React-with-Redux-Toolkit - Frontend
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This is a book sales application where books are listed, and users can add or remove any books they want from their cart. With the Redux Toolkit, the cart can be viewed simultaneously on the entire page, and changes can be tracked.
 
-## Available Scripts
+## Features
 
-In the project directory, you can run:
+- **Home Page:** Users can view pictures, titles, and prices of books. If they wish, they can go to the book detail page or add the book to their cart.
+- **Book Detail Page:** Photos, titles, descriptions, release years, and prices of the books are listed. Users can add the book to the cart or return to the home page.
+- **Cart Page:** The books in the cart are displayed. The quantity can be increased or decreased, or the book can be completely removed from the cart.
+- **Cart Icon in Header:** Thanks to the cart icon in the header, users can view the current status of their carts on every page, remove items, and navigate to the cart detail page.
 
-### `npm start`
+## Requirements
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+Ensure you have the following software installed:
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+- [Node.js](https://nodejs.org/)  (v14.0.0 or higher)
+- [npm](https://www.npmjs.com/) (comes with Node.js)
 
-### `npm test`
+## Installation Instructions
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+To run this project locally, follow these steps:
 
-### `npm run build`
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/ipekgungor/Bookstore-App-Java-PostgreSQL-React-with-Redux-Toolkit---Frontend.git
+2. Navigate to the Project Directory:
+   ```bash
+   cd Bookstore-App-Java-PostgreSQL-React-with-Redux-Toolkit---Frontend
+3. Install Dependencies:
+   ```bash
+   npm install react-router-dom
+   npm install bootstrap@latest
+   npm install @mui/material @emotion/react @emotion/styled @mui/icons-material
+   npm install redux react-redux
+   npm install @reduxjs/toolkit react-redux
+4. Run the Application:
+   ```bash
+   npm start
+      
+## Contact
+- **Developer:** İpek Güngör
+- **Email:** ipekgungor2001@gmail.com
+- **GitHub Profile:** ipekgungor
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+## Notes
+- **You may need to check these pages.** https://mui.com/material-ui/getting-started/ and https://react-bootstrap.netlify.app/
+- **I solved the CORS problem using ngrok. You can find the configuration in the axiosConfig.js file. Ngrok allows you to create an account and start using it by entering the command ngrok http 8080.** 
